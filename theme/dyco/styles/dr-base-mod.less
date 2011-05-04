@@ -1,0 +1,207 @@
+@primary: #55b7d1;
+@secondary: #bdd73e;
+@bright: #d6eef4;
+@red: #ED1B35;
+
+/** Thermometer **/
+#thermometer-overlay {
+z-index:1000; 
+position: relative;
+background: url("../images/thermometer-overlay.png") no-repeat scroll left top transparent;
+height: 256px;
+}
+
+.dr-base-thermometer {
+  position: relative;
+  height: 256px;
+}
+
+.dr-base-thermometer span {
+  position: absolute;
+}
+
+.thermometer-goal,
+.thermometer-points {
+  display:block;
+  font-size:1.3em;
+  left:0px;
+  text-align:right;
+  width:113px;
+  z-index:2000;
+  font-weight:bold;
+}
+
+.thermometer-goal {
+  /*background: #a6d427;*/
+  background:none;
+  color:@red;
+  padding: 0px;
+}
+
+.thermometer-points {
+/*  background: #15aada;*/
+  background:none;
+  padding: 0px;
+  color:@primary;
+}
+
+/* Tops */
+.thermometer-graphics {
+  width: 53px;
+  position:absolute;
+  left:129px;
+  height:250px;
+  top:0px;
+}
+
+.thermometer-empty-top,
+.thermometer-filled-top {
+  height: 53px;
+  width: 53px;
+  left:0px;
+  right: 128px;
+}
+
+.thermometer-empty-middle,
+.thermometer-filled-middle {
+  width: 53px;
+  left:0px;
+  right: 128px;
+}
+
+.thermometer-empty-bottom,
+.thermometer-filled-bottom {
+  height: 25px;
+  width: 53px;
+  left:0px;
+  right: 128px;
+}
+
+.thermometer-empty-top {
+  background: transparent url(../images/thermometer-empty-ends-2.png) no-repeat scroll top left;
+  z-index: 100;
+}
+.thermometer-empty-middle {
+  background: transparent url(../images/thermometer-empty-middle-2.png) repeat-y scroll top left;
+  z-index: 80;
+}
+.thermometer-empty-bottom {
+  background: transparent url(../images/thermometer-empty-ends-2.png) no-repeat 0 -27px;
+  z-index: 60;
+}
+
+.thermometer-filled-top {
+  background: transparent url(../images/thermometer-filled-ends-2.png) no-repeat scroll top left;
+  z-index: 50;
+} 
+.thermometer-filled-middle {
+  background: transparent url(../images/thermometer-filled-middle-2.png) repeat-y scroll top left;
+  z-index: 40;
+}
+.thermometer-filled-bottom {
+  background: transparent url(../images/thermometer-filled-ends-2.png) no-repeat 0 -27px;
+  z-index: 40;
+}
+
+
+/** Team Stats **/
+table.dr-base-team-stats {
+  border: 1px solid #ccc;
+  margin-bottom: 0;
+}
+
+table.dr-base-team-stats tbody th {
+  border-bottom: none;
+  border-right: 1px solid #ccc;
+}
+
+table.dr-base-team-stats .odd {
+  background-color: #333;
+}
+table.dr-base-team-stats .even {
+  background-color: #555;
+}
+
+table.dr-base-team-stats thead tr th:first-child {
+  border-bottom: none;
+}
+
+table.dr-base-team-stats thead th,
+table.dr-base-team-stats tbody td {
+  text-align: right;
+}
+
+/** Buttons **/
+a.dr-base-button {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  background-color: #ccc;
+  font-size: 1.1em;
+  padding: 0.5em 0;
+  border-bottom: solid 1px #666;
+  border-right: solid 1px #666;
+}
+a.dr-base-button:link,
+a.dr-base-button:visited,
+a.dr-base-button:hover {
+  color: #000;
+  text-decoration: none;
+}
+a.dr-base-button:hover {
+  background-color: #eee;
+}
+a.dr-base-button:active {
+  background-color: #989848;
+  border-top: solid 1px #666;
+  border-left: solid 1px #666;
+  border-bottom: 0 none;
+  border-right: 0 none;
+}
+ 
+/* Donate Now button */
+a.dr-base-donate-button {
+  padding: 1em 0;
+  font-size: 2em;
+  background-color: #c60;
+}
+a.dr-base-donate-button:hover {
+  background-color: #d70;
+}
+a.dr-base-donate-button:active {
+  background-color: #b85800;
+}
+
+
+/* Team coordinator login button -- make it not look like a button */
+a.dr-base-team-coordinator-login-button:link,
+a.dr-base-team-coordinator-login-button:visited {
+  padding: 0;
+  background-color: transparent;
+  border: 0 none;
+  color: #333;
+  font-size: 1em;
+}
+a.dr-base-team-coordinator-login-button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #333;
+}
+
+/* Team link on user profile page */
+dl.dr-base-profile-team-info dd {
+  background-color: #f1f8e8;
+  padding: 1.25em;
+}
+.dr-base-raw-url {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Profile/team edit form */
+div#edit-field-captain-location-0-delete-location-wrapper,
+div#edit-field-location-0-delete-location-wrapper {
+  display: none;
+}
+

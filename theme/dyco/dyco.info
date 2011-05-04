@@ -1,0 +1,21 @@
+; $Id$
+name        = dyco
+description = Donor Rally Theme
+core       = 6.x
+base theme = huddle
+
+stylesheets[all][] = styles/basics.less
+stylesheets[all][] = styles/branding.less
+stylesheets[all][] = styles/local.less
+stylesheets[all][] = styles/dr-base-mod.less
+
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[navigation]     = Navigation bar
+regions[highlight]      = Highlighted content
+regions[content_top]    = Content top
+regions[content_bottom] = Content bottom
+regions[header]         = Header
+regions[footer]         = Footer
+regions[page_closure]   = Page closure
+
