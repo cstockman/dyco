@@ -14,6 +14,8 @@ height: 256px;
 .dr-base-thermometer {
   position: relative;
   height: 256px;
+  margin-top:0px;
+  left:0px;
 }
 
 .dr-base-thermometer span {
@@ -23,10 +25,10 @@ height: 256px;
 .thermometer-goal,
 .thermometer-points {
   display:block;
-  font-size:1.3em;
+  font-size:1.2em;
   left:0px;
   text-align:right;
-  width:113px;
+  width:105px;
   z-index:2000;
   font-weight:bold;
 }
@@ -34,7 +36,7 @@ height: 256px;
 .thermometer-goal {
   /*background: #a6d427;*/
   background:none;
-  color:@red;
+  color:@primary;
   padding: 0px;
 }
 
@@ -42,14 +44,14 @@ height: 256px;
 /*  background: #15aada;*/
   background:none;
   padding: 0px;
-  color:@primary;
+  color:@red;
 }
 
 /* Tops */
 .thermometer-graphics {
   width: 53px;
   position:absolute;
-  left:129px;
+  left:111px;
   height:250px;
   top:0px;
 }
@@ -78,35 +80,35 @@ height: 256px;
 }
 
 .thermometer-empty-top {
-  background: transparent url(../images/thermometer-empty-ends-2.png) no-repeat scroll top left;
+  background: transparent url(../images/thermometer-empty-ends-3.png) no-repeat scroll top left;
   z-index: 100;
 }
 .thermometer-empty-middle {
-  background: transparent url(../images/thermometer-empty-middle-2.png) repeat-y scroll top left;
+  background: transparent url(../images/thermometer-empty-middle-3.png) repeat-y scroll top left;
   z-index: 80;
 }
 .thermometer-empty-bottom {
-  background: transparent url(../images/thermometer-empty-ends-2.png) no-repeat 0 -27px;
+  background: transparent url(../images/thermometer-empty-ends-3.png) no-repeat 0 -27px;
   z-index: 60;
 }
 
 .thermometer-filled-top {
-  background: transparent url(../images/thermometer-filled-ends-2.png) no-repeat scroll top left;
+  background: transparent url(../images/thermometer-filled-ends-3.png) no-repeat scroll top left;
   z-index: 50;
 } 
 .thermometer-filled-middle {
-  background: transparent url(../images/thermometer-filled-middle-2.png) repeat-y scroll top left;
+  background: transparent url(../images/thermometer-filled-middle-3.png) repeat-y scroll top left;
   z-index: 40;
 }
 .thermometer-filled-bottom {
-  background: transparent url(../images/thermometer-filled-ends-2.png) no-repeat 0 -27px;
+  background: transparent url(../images/thermometer-filled-ends-3.png) no-repeat 0 -27px;
   z-index: 40;
 }
 
 
 /** Team Stats **/
 table.dr-base-team-stats {
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   margin-bottom: 0;
 }
 

@@ -1,0 +1,22 @@
+This is a rough and not entirely accurate CHANGELOG of what has been changed. Largely I am using it to keep track of what things I want to change outside of the theme folder (e.g. views).
+
+5-10-2011
+
+Themed a lot more pages although there are still some rough spots. In addition I've made some changes outside of the theme.
+
+Changed and Exported Views and Contexts:
+
+Teams View
+ - change it from 4 rows to 3 rows.
+
+Team Page Context
+ - Moved team information and logo to content-top. Also removed some unnecessary blocks in the sidebar such as team captain login since this should be on every page at the top anyway.
+
+Anonymous Front Context
+ - remove the create and manage team links because they are always at the top.
+
+Changed Modules:
+
+dr_base.module
+ - removed the Create Team Blog Post link since we are no longer doing these.
+ - I corrected the Support A Team link to point to the teams page (before it pointed to register or something because I didn't know the path).

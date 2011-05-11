@@ -2,7 +2,8 @@
 @secondary: #bdd73e;
 @bright: #d6eef4;
 @red: #ED1B35;
-
+@cyan: #00B6D1;
+@bright-cyan:#00D2F2;
 
 .rounded_corners (@radius: 6px) {
   -moz-border-radius: @radius;
@@ -20,7 +21,7 @@
 
 #site-name a:link span,
 #site-name a:visited span {
-  color: @primary;
+  color: @cyan;
 }
 
 h1.title {
@@ -71,7 +72,7 @@ h1.title {
 
 #navigation ul#main-menu li a:link,
 #navigation ul#main-menu li a:visited {
-  color: @primary;
+  color: @cyan;
 /*  .rounded_corners;
   background-color: @secondary;*/
 }
@@ -100,13 +101,13 @@ h1.title {
 
 a:link,
 a:visited {
-  color: @primary;
+  color: @cyan;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: @primary;
+  color: @bright-cyan;
 }
 
 h1, h2, h3,

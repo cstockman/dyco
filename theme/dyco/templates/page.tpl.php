@@ -130,7 +130,7 @@
 
     <div id="header"><div class="section clearfix">
         <div id="navigation"><div class="section clearfix">
-      <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
+      <?php print theme(array('links__system_main_menu', 'links'), $mainmenu,
             array(
               'id' => 'main-menu',
               'class' => 'links clearfix',

@@ -5,7 +5,10 @@ GREEN/YELLOW: #bdd73e
 @brown: 261D1B;
 @header-size:233px;
 @red: #ED1B35;
+@light-red: #FFD1D6;
+@dark-red: #DB3D3D;
 @cyan: #00B6D1;
+@logo-width:198px;
 
 body {
      background: #fff url('../images/HeaderBG-3.png') top center no-repeat;
@@ -45,16 +48,13 @@ body {
 	 width:100%;
 }
 
-/*charlie test*/x
-.thermometer-graphics {
-		      width:100px;
-}
-
 body.one-sidebar .region-sidebar-second {
 /*	margin-left: 660px;
 	margin-right: -990px;*/
-	width: 270px;
-	margin:0px;
+	width: 258px;
+	margin:20px 0px;
+	background:#f8f8f8;
+	padding:5px;
 }
 
 .region-sidebar-second {
@@ -142,8 +142,9 @@ table styling
 
 table,
 .view-leaderboard-top {
+  color:#111;	      
   thead th {
-    background: #bdd73e;
+    background: @dark-red;
    }
   tr.odd {
     background: #FFF;
@@ -153,6 +154,11 @@ table,
    }
 }
 
+/*LEADERBOARD*/
+#block-views-leaderboard_top_ppc-block_1 {
+	margin:10px 0px;				 
+}
+
 /*
 Team Stats
 */
@@ -160,12 +166,12 @@ Team Stats
 table.dr-base-team-stats  {
  border: 1px solid #000;
   thead {
-   background: #bdd73e;
+   background: @dark-red;
    border-bottom: 2px solid #000;
     tr.even, tr.odd {
      th, td {
       color: #000;
-      background: #bdd73e;
+      background: @dark-red;
       padding: 5px;
       text-align: center;
      }
@@ -218,7 +224,7 @@ table.dr-base-team-stats  {
 
 .node-type-team h1.title {
 	position: relative;
-	margin: 15px 0 0 0;
+	margin: 15px 0 5px 0;
 }
 
 #dr-paypal-donate-form #edit-button {
@@ -228,17 +234,18 @@ table.dr-base-team-stats  {
 }
 
 #dr-paypal-donate-form #edit-button:hover {
-	background: #333;
-	color: #bdd73e ;
+	background: @red;
+	color: @cyan ;
 }
 
-#dr-paypal-donate-form .form-item {
+#dr-paypal-donate-form #edit-amount {
+	width:80%;	       
 }
 #block-dr_base-1 {
 }
 .team-page #content-area {
-  float: right;
-  width: 250px;
+  float: left;
+  /*width: 250px;*/
 }
 .team-page .region-content-bottom {
   float: left;
@@ -258,17 +265,43 @@ table.dr-base-team-stats  {
 .view-dr-team-logo {
 	float: left;
 	width: 200px;
-	margin: 0 10px 0 0;
+	margin: 10px 10px 0 0;
 }
 
 .view-team-information {
 	float: left;
-	font-size: 2em;
+	font-size: 1.3em;
 	line-height: 1.2em;
-	width: 400px;
-	padding: 5px 15px;
+	width: 320px;
+	margin:10px;
+/*	padding: 10px 10px;*/
 }
 
+#block-views-dr_team_logo-block_1 {
+	float:left;
+	width:210px;			  				
+}
+
+/*charlie*/
+#block-views-team_information-block_1 {
+	float:left;
+        width:340px;			      
+}
+
+/* TEAMS PAGE */
+.view-teams .views-field-title {
+	font-size:1.5em;
+	width:@logo-width;
+	text-align:center;
+	margin:10px 0px;
+}
+
+.view-teams .views-field-field-cash-goal-value {
+	text-align:center;  
+	font-size:1.2em;
+	width:@logo-width;
+	margin:8px 0px;
+}
 
 /* TEAM BLOG */
 
@@ -327,4 +360,15 @@ table.dr-base-team-stats  {
 .view-team-blog h2.title a:hover,
 .view-team-blog h2.title a:focus {
 	background: #55b7d1;
+}
+
+/* ADMIN BLOG */
+.view-blog .views-field-title {
+	font-size:1.8em;
+	margin:12px 0px;
+}
+
+.view-blog .views-field-body {
+	font-size:1.3em;   
+	line-height:1.5em;
 }

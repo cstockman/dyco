@@ -558,10 +558,6 @@ function _dr_base_block_team_links() {
         'title' => t('Manage account'),
         'href' => "user/{$user->uid}/edit",
       ),
-      'blog-post' => array(
-        'title' => t('Team Blog Post'),
-        'href' => "node/add/team-blog-post",
-      ),
       'logout' => array(
         'title' => t('Logout'),
         'href' => 'logout',
@@ -580,7 +576,7 @@ function _dr_base_block_team_links() {
       ),
       'donate' => array(
         'title' => t('Support A Team!'),
-        'href' => 'user/register',
+        'href' => 'teams',
       ),
     );
   }
