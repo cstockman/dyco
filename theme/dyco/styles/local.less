@@ -9,6 +9,7 @@ GREEN/YELLOW: #bdd73e
 @dark-red: #DB3D3D;
 @cyan: #00B6D1;
 @logo-width:198px;
+@bright-cyan:#00D2F2;
 
 body {
      background: #fff url('../images/HeaderBG-3.png') top center no-repeat;
@@ -104,7 +105,7 @@ h1, h2, h3 {
       }
     }
     li:hover a {
-        background: #3F707F;
+        background: @bright-cyan; 
     }
     li.donate {
      a:link, a:visited {
@@ -269,6 +270,21 @@ table.dr-base-team-stats  {
 #block-boxes-dr_base_welcome {
      font-size:1.1em;
      line-height:1.3em;
+}
+
+/*GENERAL NODE STYLING*/
+.node .content {
+      font-size:1.2em;
+      line-height:1.3em;
+}
+
+.field-label, .field-items {
+	     float:left;
+}
+
+.field {
+       clear:both;
+       padding:10px 0px;
 }
 
 /* TEAM PAGES */
@@ -436,4 +452,16 @@ table.dr-base-team-stats  {
 .views-sponsors .views-field-field-image-fid {
 	width:@sponsor-logo-width;
 	margin:0 auto;
+}
+
+/* PRIZES */
+.view-prizes .view-content td {
+	width:205px;
+	text-align:center;
+	vertical-align:top;
+	.views-field-title {
+	  font-size:1.3em;
+	  margin:30px 0px 10px 0px;	  
+	}
+	font-size:1.1em;
 }
