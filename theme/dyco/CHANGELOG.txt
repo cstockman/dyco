@@ -9,6 +9,9 @@ Changed and Exported Views and Contexts:
 Teams View
  - change it from 4 rows to 3 rows.
 
+Sitewide View
+ - I got rid of the DYCO menu block. I actually handle this in a preprocess function in template.php. If, god forbid, you add this theme and the site goes down or blank, template.php and page.tpl.php $mainmenu are things to look at.
+
 Team Page Context
  - Moved team information and logo to content-top. Also removed some unnecessary blocks in the sidebar such as team captain login since this should be on every page at the top anyway.
 
@@ -20,3 +23,5 @@ Changed Modules:
 dr_base.module
  - removed the Create Team Blog Post link since we are no longer doing these.
  - I corrected the Support A Team link to point to the teams page (before it pointed to register or something because I didn't know the path).
+
+As always, you want to clear the data cache in Performance for some of these changes to take effect.

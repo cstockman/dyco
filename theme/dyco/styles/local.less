@@ -113,9 +113,55 @@ h1, h2, h3 {
      }
    }
   }
+  
+  #header-social-links {
+   width:400px;
+   float:right;
+   margin:10px 14px 0px 0px;
+   ul{ 
+   li{
+      list-style: none; 
+     a {
+       margin:0px 6px;	  
+      float:right;
+      width:37px;
+      height:37px;
+     }
+     a.facebook-link {
+	background: transparent url('../images/facebook.png') top center no-repeat;      
+     }
+     a.facebook-link:hover {
+     	background: transparent url('../images/facebook-2.png') top center no-repeat;      
+     }
+     a.twitter-link {
+	background: transparent url('../images/twitter.png') top center no-repeat;      
+     }
+     a.twitter-link:hover {
+     	background: transparent url('../images/twitter-2.png') top center no-repeat;      
+     }
+   }
+   li.follow-us {
+        float:right;
+        height:37px;
+        width:110px;
+   	background: transparent url('../images/follow-us.png') top left no-repeat;      
+   }
+   }
+  }
 }
 
+#footer {
+	background: #e0e0e0 url('../images/footerBG-3.png') top center no-repeat;
+	height:160px;
+}
 
+#footer-message {
+    color: #000000;
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 55px 0px 0px 0px;
+    width: 870px;
+}
 
 .breadcrumb {
 	background: #b8d3df;
@@ -219,6 +265,11 @@ table.dr-base-team-stats  {
   margin-bottom: 1em;
 }
 
+/*FRONT PAGE, WELCOME*/
+#block-boxes-dr_base_welcome {
+     font-size:1.1em;
+     line-height:1.3em;
+}
 
 /* TEAM PAGES */
 
@@ -363,12 +414,26 @@ table.dr-base-team-stats  {
 }
 
 /* ADMIN BLOG */
-.view-blog .views-field-title {
+.view-admin-blog-posts .views-field-title {
 	font-size:1.8em;
 	margin:12px 0px;
 }
 
-.view-blog .views-field-body {
+.view-admin-blog-posts .views-field-body {
 	font-size:1.3em;   
 	line-height:1.5em;
+}
+
+/* SPONSORS */
+@sponsor-logo-width:125px;
+.view-sponsors .views-field-title {
+	font-size:1.3em;
+	width:@sponsor-logo-width;
+	text-align:center;
+	margin:10px 0px;
+}
+
+.views-sponsors .views-field-field-image-fid {
+	width:@sponsor-logo-width;
+	margin:0 auto;
 }

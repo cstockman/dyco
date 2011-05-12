@@ -172,6 +172,20 @@
 
       <?php print $header; ?>
 
+      <!-- Social Links -->
+
+      <div id="header-social-links">
+	<ul>
+	  <li >
+	    <a href="http://www.facebook.com/826Seattle" class="facebook-link"></a>
+	  </li>
+	  <li >
+	    <a href="http://twitter.com/#!/826seattle" class="twitter-link"></a>
+	  </li>
+	  <li class="follow-us">
+	  </li>
+	</ul>
+      </div> 
     </div></div> <!-- /.section, /#header -->
 
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
@@ -219,6 +233,7 @@
       <?php print $postscript; ?>
     </div></div> <!-- /.section, #postscript -->
     <?php endif; ?>
+  </div></div> <!-- /#page, /#page-wrapper -->
     <?php if ($footer || $footer_message || $secondary_links): ?>
       <div id="footer"><div class="section clearfix">
 
@@ -243,11 +258,9 @@
       </div></div> <!-- /.section, /#footer -->
     <?php endif; ?>
 
-  </div></div> <!-- /#page, /#page-wrapper -->
-
   <?php print $page_closure; ?>
 
-  <?php print $closure; ?>
+ <?php print $closure; ?>
 
 </body>
 </html>
